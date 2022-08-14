@@ -1,0 +1,23 @@
+$redColor: #d61f26;
+
+.tv-series {
+  padding-top: 200px;
+  width: 100%;
+  margin: auto;
+  .tv-series-content {
+    min-height: 100vh;
+    padding: 0 100px;
+    h1 {
+      font-weight: 700;
+      font-size: 42px;
+    }
+    .tv-series-list {
+      padding-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      row-gap: 40px;
+    }
+  }
+}

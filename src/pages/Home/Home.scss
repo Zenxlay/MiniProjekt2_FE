@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap");
+
+//Colors
+$redColor: #eb5757;
+$SecondaryColor: red;
+$primaryColor: white;
+$noData: #ddd;
+
+//Typograpy
+$InterFont: "Inter", sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+.home-container {
+  margin-top: 140px;
+  padding: 0px 100px;
+  max-width: 100vw;
+  min-height: 100vh;
+  .active {
+    color: $redColor;
+  }
+  & .landingPages {
+    position: relative;
+    & .scrolling-film-container {
+      margin-right: 40px;
+      position: relative;
+
+      //Slider
+      .slick-slider {
+        width: 75%;
+        height: 490px;
+        .slick-dots {
+          bottom: 40px;
+          li {
+            button {
+              width: 15px;
+              height: 15px;
+              background-color: white;
+              border-radius: 50%;
+              opacity: 1;
+              z-index: 5;
+              &:before {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: red;
+                text-align: center;
+                content: "";
+              }
+            }
+          }
+        }
+      }
+      //End Slider
+
+      & img {
+        margin-top: 6px;
+        margin-right: 20px;
+        border-radius: 15px;
+      }
+    }
+
+    & .airing-container {
+      position: absolute;
+      right: -60px;
+      top: 0;
+      width: 28%;
+      & .airing-title {
+        font-family: $InterFont;
+        font-weight: $Bold;
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #40444c;
+      }
+      & .container-skeleton-airing {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 10px;
+        width: 80%;
+        .right {
+          width: 100%;
+        }
+      }
+
+      & .airing-box {
+        display: flex;
+        width: 80%;
+        margin-bottom: 5px;
+        overflow: hidden;
+        padding: 8px;
+        cursor: pointer;
+        & .airing-images {
+          margin-right: 10px;
+          border-radius: 10px;
+        }
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.161);
+          border-radius: 10px;
+        }
+
+        & .airing-text-container {
+          display: flex;
+          flex-wrap: wrap;
+          & .airing-film-title {
+            font-weight: 500;
+          }
+          & .airing-text {
+            font-family: $InterFont;
+            font-weight: $Regular;
+            font-size: 14px;
+            color: #40444c;
+          }
+
+          & .airing-star {
+            font-family: $InterFont;
+            font-weight: $Medium;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            & .star-icons {
+              margin-right: 5px;
+              width: 15px;
+              height: 15px;
+              color: #fece20;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .listFilm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}

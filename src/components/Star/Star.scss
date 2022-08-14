@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap');
+
+//Colors
+$SecondaryColor: red;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: 'Inter', sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+.item-start {
+    display: flex;
+    align-items: center;
+    font-weight: $Medium;
+    font-family: $InterFont;
+    font-size: 12px;
+
+    & .star-icons {
+        color: rgba(254, 206, 32, 1);
+        width: 15px;
+        height: 14px;
+        margin-right: 5px;
+    }
+}

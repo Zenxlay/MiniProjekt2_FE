@@ -1,0 +1,41 @@
+.profil-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  img {
+    width: 160px;
+    height: 160px;
+    background: white;
+    border-radius: 50%;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .file-upload {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #a7a6a6;
+    border-radius: 8px;
+    .file-icon {
+      font-size: 24px;
+    }
+    &:hover {
+      background-color: #eb5757;
+      color: white;
+      border: 2px solid #eb5757;
+    }
+    label {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 100%;
+      width: 100%;
+      padding-left: 14px;
+    }
+  }
+}

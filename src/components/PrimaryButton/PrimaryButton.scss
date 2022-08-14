@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap');
+
+//Colors
+$SecondaryColor: #eb5757;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: 'Inter', sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+
+$redColor: #eb5757;
+$activeInput: #1a73e8;
+
+.primary-btn {
+    background: $redColor;
+    color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 43px;
+    border-radius: 8px;
+    border: none;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $InterFont;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.primary-btn:hover {
+    background-color: $primaryColor;
+    color: $SecondaryColor;
+    border: 1px solid red;
+}

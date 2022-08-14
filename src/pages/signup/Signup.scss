@@ -1,0 +1,50 @@
+$redColor: #eb5757;
+
+.signup {
+  display: flex;
+  .side-image {
+    width: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://i.ibb.co/X3ZWW7M/sideimage.png");
+    background-size: cover;
+  }
+  .signup-form {
+    width: 50%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .signup-input {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        .signin {
+          color: grey;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+
+      .signupLogin {
+        .input {
+          width: 350px;
+          height: 50px;
+          border-radius: 5px;
+          padding: 0 20px;
+          border: 1px solid #a7a6a6;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        .search-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}

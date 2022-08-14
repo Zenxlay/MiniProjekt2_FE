@@ -1,0 +1,20 @@
+$redColor: #eb5757;
+
+.submit-button {
+  button {
+    height: 50px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid $redColor;
+    outline: none;
+    background: $redColor;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background: white;
+      color: $redColor;
+    }
+  }
+}

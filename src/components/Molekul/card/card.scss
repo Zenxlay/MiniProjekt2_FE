@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap");
+
+//Colors
+$SecondaryColor: red;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: "Inter", sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+.container-card {
+  overflow: hidden;
+  width: 250px;
+  height: 330px;
+  border-radius: 12px;
+  position: relative;
+  & .info-item {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.589));
+    width: 250px;
+    height: 330px;
+    border-radius: 12px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+    & .item-title {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      & p {
+        color: $primaryColor;
+        font-family: $InterFont;
+        font-weight: $Bold;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  & .info-item:hover {
+    opacity: 1;
+  }
+
+  .img {
+    z-index: -5;
+    pointer-events: none;
+    position: relative;
+    transition: 0.5s;
+  }
+}
+.container-card:hover .img {
+  transform: scale(105%);
+}
+
+.container-card:hover .item-title {
+  animation: slideToRight 0.5s;
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

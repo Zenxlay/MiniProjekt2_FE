@@ -1,0 +1,19 @@
+.videos-trailer {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .video {
+      width: 310px;
+      height: 240px;
+      background-color: grey;
+      border-radius: 12px;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+  }
+}

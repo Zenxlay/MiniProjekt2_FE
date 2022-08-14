@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap");
+
+//Colors
+$SecondaryColor: red;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: "Inter", sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+.list-film {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+  & .title {
+    font-family: $InterFont;
+    font-weight: $Bold;
+    font-size: 28px;
+    color: #40444c;
+    margin-bottom: 29px;
+  }
+
+  & .list-film-carousel {
+    & .inner-carousel {
+      padding: 10px;
+      .skeleton {
+        display: flex;
+        justify-content: space-between;
+      }
+      & .slick-slider {
+        width: 104%;
+        position: relative;
+        left: -10px;
+        & .slick-prev,
+        .slick-next {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: rgb(0, 114, 214);
+          transition: 0.3s;
+          z-index: 25;
+          opacity: 0;
+        }
+        & .slick-prev:hover,
+        .slick-next:hover {
+          color: rgb(255, 0, 0);
+        }
+        & .slick-prev::before,
+        .slick-next::before {
+          z-index: 30;
+          color: #40444c;
+        }
+
+        & .slick-next {
+          transform: translateX(-115%) translateY(-30%);
+        }
+        & .slick-prev {
+          transform: translateX(5%) translateY(-30%);
+        }
+      }
+      & .item {
+        position: relative;
+      }
+    }
+  }
+
+  .list-film-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    top: 0;
+    color: red;
+    height: 44px;
+    padding: 8px;
+    border: none;
+    background-color: rgba(214, 31, 38, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: $InterFont;
+    font-weight: $Bold;
+    transition: 0.3s;
+    cursor: pointer;
+
+    & .right-icons {
+      width: 14px;
+      height: 12px;
+    }
+  }
+
+  .list-film-button:hover {
+    background-color: rgba(214, 31, 37, 0.62);
+    color: white;
+  }
+
+  .right-icon,
+  .left-icon {
+    position: absolute;
+    display: block;
+    right: -24px;
+    top: 230px;
+    width: 37px;
+    height: 37px;
+    padding: 10px;
+    border-radius: 50%;
+    color: red;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 24;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  }
+  .right-icon {
+    right: -2px;
+  }
+  .left-icon {
+    left: -20px;
+  }
+}

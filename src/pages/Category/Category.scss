@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap");
+
+//Colors
+$SecondaryColor: red;
+$primaryColor: white;
+
+//Typograpy
+$InterFont: "Inter", sans-serif;
+$ExtraLight: 200;
+$Light: 300;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+
+.all-category-container {
+  padding: 0px 100px;
+  margin-top: 150px;
+
+  & .all-category-history {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    & p {
+      font-family: $InterFont;
+      font-weight: $Medium;
+      font-size: 16px;
+      color: rgba(206, 206, 206, 1);
+      display: flex;
+      align-items: center;
+
+      & .icon-right {
+        margin-right: 7px;
+      }
+    }
+
+    & p:nth-child(3) {
+      color: red;
+      font-family: $SemiBold;
+    }
+  }
+
+  & .all-category {
+    & .all-category-title {
+      color: rgba(64, 68, 76, 1);
+      font-family: $InterFont;
+      font-weight: $Bold;
+      font-size: 39px;
+      margin-bottom: 40px;
+    }
+
+    & .all-category-film {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      & img {
+        border-radius: 12px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      & img:hover {
+        transform: scale(105%) translateY(-2%);
+      }
+    }
+  }
+}

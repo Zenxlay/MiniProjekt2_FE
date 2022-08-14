@@ -1,0 +1,41 @@
+.container-is-login {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.295);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    .buttonCancel {
+      position: absolute;
+      left: 5px;
+      top: -15px;
+      width: 20%;
+      height: 30px;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .buttonLogin {
+      width: 40%;
+      height: 40px;
+      margin-left: 65px;
+      margin-top: 20px;
+    }
+  }
+}

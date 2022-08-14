@@ -1,0 +1,45 @@
+$redColor: #eb5757;
+
+.profil {
+  padding-top: 100px;
+  .profil-background {
+    img {
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      top: 100px;
+    }
+  }
+  .profil-box {
+    position: relative;
+    width: 70%;
+    background: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    .profil-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      gap: 60px;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        span {
+          color: $redColor;
+          font-weight: 900;
+        }
+      }
+    }
+    .update-profil {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      position: relative;
+      padding-bottom: 100px;
+    }
+  }
+}

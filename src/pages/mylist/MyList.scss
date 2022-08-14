@@ -1,0 +1,23 @@
+$redColor: #eb5757;
+
+.mylist {
+  padding-top: 200px;
+  width: 100%;
+  margin: auto;
+  .mylist-content {
+    padding: 0 100px;
+    min-height: 100vh;
+    .my-list-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 40px;
+        color: $redColor;
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 5px $redColor;
+      }
+    }
+  }
+}

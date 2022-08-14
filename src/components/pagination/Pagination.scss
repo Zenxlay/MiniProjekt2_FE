@@ -1,0 +1,37 @@
+.pagination {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
+  .back,
+  .next {
+    background: white;
+    border: 1px solid #a7a6a6;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #eb5757;
+    cursor: pointer;
+    &:hover {
+      background-color: #eb5757;
+      color: white;
+      border: 0px solid;
+    }
+  }
+  .noPage {
+    cursor: no-drop;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eb5757;
+    color: white;
+  }
+}

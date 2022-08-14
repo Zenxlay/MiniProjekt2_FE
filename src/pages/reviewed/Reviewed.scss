@@ -1,0 +1,23 @@
+$redColor: #d61f26;
+
+.reviewed {
+  padding-top: 200px;
+  width: 100%;
+  margin: auto;
+  .reviewed-content {
+    padding: 0 100px;
+    min-height: 100vh;
+    .reviewed-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-size: 40px;
+        color: $redColor;
+        text-shadow: 3px 3px 5px $redColor;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

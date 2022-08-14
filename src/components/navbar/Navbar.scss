@@ -1,0 +1,133 @@
+$redColor: #eb5757;
+$activeInput: #1a73e8;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: fixed;
+  padding: 0 100px;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  z-index: 100;
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .logo {
+      color: $redColor;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    ul {
+      display: flex;
+      .Link {
+        color: black;
+        text-decoration: none;
+      }
+      .active {
+        color: $redColor;
+      }
+      li {
+        list-style: none;
+        margin: 0 10px;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+          color: $redColor;
+        }
+      }
+    }
+  }
+
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 39%;
+    position: relative;
+    left: -10px;
+    .inputNavbar {
+      position: relative;
+      .input {
+        width: 220px;
+        height: 35px;
+        border: 1px solid #a7a6a6;
+        padding: 0 20px;
+        border-radius: 8px;
+        &:focus {
+          outline-color: $activeInput;
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+      }
+    }
+    .result,
+    .scroll {
+      max-height: 400px;
+    }
+    .scroll {
+      overflow-y: scroll;
+    }
+    .text-search {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-bottom: 5px;
+      align-items: center;
+      padding: 5px;
+      border-radius: 5px;
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.294);
+      }
+      img {
+        width: 30px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    }
+    p {
+    }
+    .search-result {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      background-color: white;
+      box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.5);
+      width: 100%;
+      padding: 10px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      margin-right: -30px;
+      .loginSignupNav {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 10px;
+        &:nth-child(2) {
+          background: $redColor;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 90px;
+          height: 44px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
